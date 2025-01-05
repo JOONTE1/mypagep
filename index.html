@@ -1,33 +1,107 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my toyota page </title>
+    <title>My Toyota Page</title>
     <style>
-        .gradient-background {
-            background: linear-gradient(to right, blue, purple, grey);
-            color: white;
-            padding: 20px;
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
+
+        .gradient-background {
+            background: linear-gradient(to right, #2196F3, #9C27B0, #607D8B);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        /* Highlight Text */
         .highlight {
-            color: orange;
-       
+            color: #FF9800;
+            font-weight: bold;
+        }
+
+        /* Responsive Image */
+        .car-image {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        /* Main content */
+        main {
+            padding: 20px;
+            text-align: left;
+            background-color: #ffffff;
+            color: #333;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            max-width: 1200px;
+            margin: 30px auto;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .gradient-background {
+                padding: 20px;
+            }
+
+            .highlight {
+                font-size: 18px;
+            }
         }
     </style>
 </head>
-<body class="gradient-background">
-    <header>
-        <h1 class="highlight">my toyota page where i show you the history and the cars and ceos and facts all about toyota !</h1>
+
+<body>
+    <header class="gradient-background">
+        <h1 class="highlight">My Toyota Page: History, Cars, CEOs, and More!</h1>
     </header>
+    
     <main>
         <section>
-            <h2>Toyota!</h2>
-            <img src="path_to_image.jpg" alt="Toyota Car Image" class="car-image">
+            <h2>Toyota History</h2>
+            <img src="toyota_image.jpg" alt="Toyota Car Image" class="car-image">
             <p class="highlight">
-               In 1933 Toyoda Kiichiro founded what later became the Toyota Motor Corporation as a division of the Toyoda Automatic Loom Works, Ltd. (later Toyota Industries Corporation, now a subsidiary), a Japanese manufacturer founded by his father, Toyoda Sakichi. Its first production car, the Model AA sedan, was released in 1936. The following year the division was incorporated as the Toyota Motor Company, Ltd., headed by Kiichiro. (The company’s name was changed to Toyota, which has a more pleasing sound in Japanese.) Toyota subsequently established several related companies, including Toyoda Machine Works, Ltd. (1941), and Toyota Auto Body, Ltd. (1945). During World War II the company suspended production of passenger cars and concentrated on trucks. Faced with wrecked facilities and a chaotic economy in the aftermath of World War II, the company did not resume making passenger cars until 1947 with the introduction of the Model SA.
+                In 1933, Toyoda Kiichiro founded what later became the Toyota Motor Corporation as a division of the Toyoda Automatic Loom Works, Ltd. (later Toyota Industries Corporation, now a subsidiary), a Japanese manufacturer founded by his father, Toyoda Sakichi. Its first production car, the Model AA sedan, was released in 1936. The following year, the division was incorporated as the Toyota Motor Company, Ltd., headed by Kiichiro. (The company’s name was changed to Toyota, which has a more pleasing sound in Japanese.) Toyota subsequently established several related companies, including Toyoda Machine Works, Ltd. (1941), and Toyota Auto Body, Ltd. (1945). During World War II, the company suspended production of passenger cars and concentrated on trucks. Faced with wrecked facilities and a chaotic economy in the aftermath of World War II, the company did not resume making passenger cars until 1947 with the introduction of the Model SA.
+            </p>
+        </section>
 
-By the 1950s Toyota’s automobile production factories were back in full operation, and to gain competitiveness the company began a careful study of American automobile manufacturers, owing to perceived U.S. technical and economic superiority. Toyota executives toured the production facilities of corporations, including the Ford Motor Company, to observe the latest automobile manufacturing technology and in turn implemented it in their own facilities, yielding a nearly immediate increase in efficiency. In 1957 Toyota Motor Sales, U.S.A., Inc., was established, and the following year the company released the Toyopet sedan, its first model to be marketed in the United States; it was poorly received because of its high price and lack of horsepower. The Land Cruiser, a 4 × 4 utility vehicle released in 1958, was more successful. In 1965 the Toyopet, completely redesigned for American drivers, was re-released as the Toyota Corona, marking the company’s first major success in the United States.
+        <section>
+            <h2>Growth in the 1950s & 1960s</h2>
+            <p>
+                By the 1950s, Toyota’s automobile production factories were back in full operation, and to gain competitiveness, the company began a careful study of American automobile manufacturers, owing to perceived U.S. technical and economic superiority. Toyota executives toured the production facilities of corporations, including the Ford Motor Company, to observe the latest automobile manufacturing technology and in turn implemented it in their own facilities, yielding a nearly immediate increase in efficiency. In 1957, Toyota Motor Sales, U.S.A., Inc., was established, and the following year, the company released the Toyopet sedan, its first model to be marketed in the United States. It was poorly received because of its high price and lack of horsepower. The Land Cruiser, a 4 × 4 utility vehicle released in 1958, was more successful. In 1965, the Toyopet, completely redesigned for American drivers, was re-released as the Toyota Corona, marking the company’s first major success in the United States.
+            </p>
         </section>
     </main>
 </body>
+
 </html>
