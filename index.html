@@ -9,82 +9,129 @@
     <style>
         /* Global Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
         }
 
-        .gradient-background {
-            background: linear-gradient(to right, #2196F3, #9C27B0, #607D8B);
+        /* Header Styling */
+        header {
+            background: linear-gradient(90deg, #2196F3, #9C27B0);
             color: white;
-            padding: 30px;
+            padding: 50px 0;
             text-align: center;
+            border-bottom: 5px solid #fff;
         }
 
         h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
+            font-size: 3.5em;
+            margin: 0;
         }
 
         h2 {
-            font-size: 2em;
+            font-size: 2.2em;
             margin-bottom: 15px;
+            color: #333;
         }
 
-        /* Highlight Text */
+        /* Main Content Styling */
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: white;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        /* Highlighted Text */
         .highlight {
             color: #FF9800;
             font-weight: bold;
         }
 
-        /* Responsive Image */
+        /* Image Styling */
         .car-image {
-            max-width: 100%;
+            width: 100%;
             height: auto;
+            border-radius: 12px;
             margin: 20px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
 
-        /* Main content */
-        main {
-            padding: 20px;
-            text-align: left;
-            background-color: #ffffff;
-            color: #333;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            max-width: 1200px;
-            margin: 30px auto;
+        /* Section Styling */
+        .founder-section {
+            background-color: #eef2f7;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
         }
 
-        section {
-            margin-bottom: 20px;
+        .founder-section img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+        }
+
+        .founder-section p {
+            font-size: 1.1em;
+            color: #555;
+            margin-top: 15px;
+        }
+
+        /* List Styling */
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 15px;
+            line-height: 1.8;
         }
 
         /* Responsive Design */
         @media screen and (max-width: 768px) {
             h1 {
-                font-size: 2em;
+                font-size: 2.5em;
             }
 
             h2 {
-                font-size: 1.5em;
-            }
-
-            .gradient-background {
-                padding: 20px;
+                font-size: 1.8em;
             }
 
             .highlight {
-                font-size: 18px;
+                font-size: 1.1em;
             }
+
+            main {
+                padding: 15px;
+            }
+        }
+
+        /* Hover Effect for Sections */
+        section:hover {
+            background-color: #f0f0f0;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Styling for List Items */
+        li {
+            font-size: 1.1em;
         }
     </style>
 </head>
 
 <body>
-    <header class="gradient-background">
-        <h1 class="highlight">My Toyota Page: History, Cars, CEOs, and More!</h1>
+    <header>
+        <h1 class="highlight">Toyota: History, Innovation, and Growth</h1>
     </header>
     
     <main>
@@ -139,6 +186,15 @@
             </ul>
         </section>
 
+        <!-- Founder Section -->
+        <section class="founder-section">
+            <h2>Toyota's Founder: Sakichi Toyoda</h2>
+            <img src="sakichi_image.jpg" alt="Sakichi Toyoda" class="car-image">
+            <p>
+                Sakichi Toyoda (1867–1930) was a pioneering inventor and entrepreneur who is regarded as the father of the Toyota Group. He founded Toyoda Automatic Loom Works in 1926, which eventually became the foundation for Toyota Motor Corporation. His commitment to technological innovation and efficiency laid the groundwork for his son's vision of an automobile empire. Toyoda is credited with inventing the automatic loom, which revolutionized the textile industry in Japan.
+            </p>
+        </section>
+
         <section>
             <h2>Key Toyota CEOs and Leadership</h2>
             <p>
@@ -146,8 +202,9 @@
             </p>
             <ul>
                 <li><strong>Kiichiro Toyoda</strong> (1937–1950): Founder of Toyota, who played a key role in shifting the company from textile manufacturing to automobile production.</li>
-                <li><strong>Eiji Toyoda</strong> (1967–1981): Credited with Toyota’s global expansion and introduction of the Toyota Production System (TPS), a revolutionary manufacturing technique that boosted efficiency and quality.</li>
-                <li><strong>Akio Toyoda</strong> (2009–present): The current CEO, grandson of the founder, who has focused on sustainability, innovation, and expanding Toyota’s hybrid and electric vehicle lineup.</li>
+                <li><strong>Eiji Toyoda</strong> (1967–1981): Credited with Toyota’s global expansion and introduction of the Toyota Production System (TPS), a revolutionary manufacturing process.
+                </li>
+                <!-- More content here -->
             </ul>
         </section>
     </main>
