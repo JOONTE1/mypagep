@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -17,6 +17,7 @@
             line-height: 1.6;
         }
 
+        /* Header Styling */
         header {
             background: linear-gradient(90deg, #2196F3, #9C27B0);
             color: white;
@@ -36,22 +37,7 @@
             color: #333;
         }
 
-        nav {
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        nav a {
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-            color: #2196F3;
-        }
-
-        nav a:hover {
-            color: #9C27B0;
-        }
-
+        /* Main Content Styling */
         main {
             max-width: 1200px;
             margin: 40px auto;
@@ -65,11 +51,13 @@
             margin-bottom: 40px;
         }
 
+        /* Highlighted Text */
         .highlight {
             color: #FF9800;
             font-weight: bold;
         }
 
+        /* Image Styling */
         .car-image {
             width: 100%;
             height: auto;
@@ -78,14 +66,38 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
 
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 50px;
+        /* Section Styling */
+        .founder-section {
+            background-color: #eef2f7;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
         }
 
+        .founder-section img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+        }
+
+        .founder-section p {
+            font-size: 1.1em;
+            color: #555;
+            margin-top: 15px;
+        }
+
+        /* List Styling */
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        /* Responsive Design */
         @media screen and (max-width: 768px) {
             h1 {
                 font-size: 2.5em;
@@ -95,55 +107,107 @@
                 font-size: 1.8em;
             }
 
+            .highlight {
+                font-size: 1.1em;
+            }
+
             main {
                 padding: 15px;
             }
+        }
+
+        /* Hover Effect for Sections */
+        section:hover {
+            background-color: #f0f0f0;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Styling for List Items */
+        li {
+            font-size: 1.1em;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>Toyota: History, Innovation, and Growth</h1>
+        <h1 class="highlight">Toyota: History, Innovation, and Growth</h1>
     </header>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="history.html">History</a>
-        <a href="innovation.html">Innovation</a>
-        <a href="models.html">Key Models</a>
-        <a href="leadership.html">Leadership</a>
-    </nav>
-
+    
     <main>
         <section>
-            <h2>Welcome to Toyota's Journey</h2>
-            <p>
-                Toyota is one of the world’s leading automobile manufacturers, known for its commitment to innovation,
-                sustainability, and quality. Dive into the incredible story of Toyota, exploring its rich history, groundbreaking
-                innovations, iconic car models, and influential leadership.
+            <h2>Toyota History</h2>
+            <img src="toyota_image.jpg" alt="Toyota Car Image" class="car-image">
+            <p class="highlight">
+                In 1933, Toyoda Kiichiro founded what later became the Toyota Motor Corporation as a division of the Toyoda Automatic Loom Works, Ltd. (later Toyota Industries Corporation, now a subsidiary), a Japanese manufacturer founded by his father, Toyoda Sakichi. Its first production car, the Model AA sedan, was released in 1936. The following year, the division was incorporated as the Toyota Motor Company, Ltd., headed by Kiichiro. (The company’s name was changed to Toyota, which has a more pleasing sound in Japanese.)
             </p>
             <p>
-                Use the navigation above to explore different aspects of Toyota’s journey, from its founding days to its present status as a
-                global leader in the automotive industry.
+                During World War II, Toyota focused on producing trucks for the military. After the war, with Japan's economy in disarray, the company resumed civilian car production in 1947 with the release of the Model SA. Over time, Toyota grew from a small, domestic car maker to a globally recognized brand, adopting pioneering methods in manufacturing and focusing on efficiency.
             </p>
         </section>
 
         <section>
-            <h2>Explore the Highlights</h2>
+            <h2>Growth in the 1950s & 1960s</h2>
+            <p>
+                By the 1950s, Toyota had fully resumed operations and sought to improve its competitiveness. The company studied U.S. car manufacturing, particularly Ford’s production lines, and incorporated new techniques into its own factories. In 1957, Toyota established Toyota Motor Sales, U.S.A., Inc., which marked the start of its operations in the U.S. market. The company’s first car sold in the U.S., the Toyopet sedan, struggled to gain traction due to its high price and underpowered engine.
+            </p>
+            <p>
+                In 1958, the Toyota Land Cruiser was introduced, marking the company’s first major success in the U.S. This 4×4 utility vehicle quickly gained popularity for its ruggedness, and by the 1960s, Toyota had solidified its presence in the U.S. market. The company’s first successful U.S. model, the Toyota Corona, was released in 1965, marking Toyota’s successful entry into the global car market.
+            </p>
+        </section>
+
+        <section>
+            <h2>1970s-1980s: Expanding and Innovating</h2>
+            <p>
+                In the 1970s, Toyota’s focus shifted toward producing fuel-efficient cars. The oil crisis of the 1970s made compact, fuel-efficient cars more desirable, and Toyota capitalized on this demand with models like the Corolla, which became the best-selling car in the world in 1974. The company’s reputation for building affordable, reliable cars began to spread globally, and Toyota started to build manufacturing plants in other countries to meet growing demand.
+            </p>
+            <p>
+                The 1980s saw Toyota move into the luxury car market with the introduction of Lexus in 1989. Lexus was positioned as a premium alternative to German luxury brands like Mercedes-Benz and BMW. Lexus’s success helped cement Toyota's reputation as a manufacturer of high-quality, reliable vehicles, and the brand quickly became synonymous with luxury and performance.
+            </p>
+        </section>
+
+        <section>
+            <h2>Modern Era: Technology, Sustainability, and Global Leadership</h2>
+            <p>
+                In the late 1990s, Toyota became a leader in hybrid technology with the launch of the Toyota Prius in 1997. The Prius was the world’s first mass-produced hybrid car, and its success paved the way for Toyota to become a pioneer in environmentally friendly automotive technology. Toyota's hybrid lineup now includes the Camry Hybrid, RAV4 Hybrid, and the Corolla Hybrid.
+            </p>
+            <p>
+                Toyota has also been a leader in hydrogen fuel cell technology, with the Toyota Mirai, released in 2014, as one of the first commercially available hydrogen-powered cars. Toyota continues to push the boundaries of sustainable transportation and is working toward achieving carbon neutrality by 2050.
+            </p>
+        </section>
+
+        <section>
+            <h2>Key Toyota Models</h2>
             <ul>
-                <li><strong>History:</strong> Discover Toyota’s humble beginnings and its rise to global prominence.</li>
-                <li><strong>Innovation:</strong> Learn about Toyota’s groundbreaking technologies like hybrid and hydrogen fuel-cell vehicles.</li>
-                <li><strong>Models:</strong> Explore Toyota’s legendary cars, from the Corolla to the Land Cruiser.</li>
-                <li><strong>Leadership:</strong> Meet the visionaries behind Toyota’s success.</li>
+                <li><strong>Toyota Corolla:</strong> Introduced in 1966, the Corolla became the best-selling car in the world, with over 50 million units sold.</li>
+                <li><strong>Toyota Prius:</strong> Launched in 1997, the Prius revolutionized the automotive industry as the first mass-produced hybrid vehicle.</li>
+                <li><strong>Toyota Land Cruiser:</strong> A rugged 4×4 vehicle introduced in 1958, the Land Cruiser became one of Toyota’s most iconic and globally recognized models.</li>
+                <li><strong>Lexus:</strong> Toyota’s luxury vehicle brand, launched in 1989, is known for high-quality engineering, performance, and luxury features.</li>
+            </ul>
+        </section>
+
+        <!-- Founder Section -->
+        <section class="founder-section">
+            <h2>Toyota's Founder: Sakichi Toyoda</h2>
+            <img src="sakichi_image.jpg" alt="Sakichi Toyoda" class="car-image">
+            <p>
+                Sakichi Toyoda (1867–1930) was a pioneering inventor and entrepreneur who is regarded as the father of the Toyota Group. He founded Toyoda Automatic Loom Works in 1926, which eventually became the foundation for Toyota Motor Corporation. His commitment to technological innovation and efficiency laid the groundwork for his son's vision of an automobile empire. Toyoda is credited with inventing the automatic loom, which revolutionized the textile industry in Japan.
+            </p>
+        </section>
+
+        <section>
+            <h2>Key Toyota CEOs and Leadership</h2>
+            <p>
+                Toyota has been led by several influential CEOs who have shaped the company’s direction and global success:
+            </p>
+            <ul>
+                <li><strong>Kiichiro Toyoda</strong> (1937–1950): Founder of Toyota, who played a key role in shifting the company from textile manufacturing to automobile production.</li>
+                <li><strong>Eiji Toyoda</strong> (1967–1981): Credited with Toyota’s global expansion and introduction of the Toyota Production System (TPS), a revolutionary manufacturing process.
+                </li>
+                <!-- More content here -->
             </ul>
         </section>
     </main>
-
-    <footer>
-        <p>&copy; 2025 Toyota Exploration. All rights reserved.</p>
-    </footer>
 </body>
 
 </html>
-
